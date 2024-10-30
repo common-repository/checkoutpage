@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "checkoutpage/cp-button",
+	"version": "1.0.0",
+	"title": "Buy button",
+	"category": "checkoutpage",
+	"description": "Add checkouts to your posts & pages",
+	"supports": {
+		"html": false
+	},
+	"keywords": ["checkout", "checkoutpage", "checkout page", "product", "ecommerce", "payment", "button", "buttons", "buy", "buy button"],
+	"attributes": {
+		"checkoutUrl": {
+			"type": "string",
+			"default": "",
+			"description": "The URL of the checkout"
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Buy now"
+		},
+		"behavior": {
+			"enum": ["link", "popup"],
+			"type": "string",
+			"default": "",
+			"description": "Open checkout in a new window or in a popup"
+		}
+	},
+	"textdomain": "cp-button",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

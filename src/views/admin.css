@@ -1,0 +1,110 @@
+#wpfooter {
+  display: none;
+}
+
+#wpbody-content {
+  padding-bottom: 0;
+}
+
+#cp-plugin {
+  margin-left: -10px;
+  background-color: #f9f9f7;
+  min-height: calc(100vh - 32px);
+}
+
+@media screen and (min-width: 782px) {
+  #cp-plugin {
+    margin-left: -20px;
+  }
+}
+
+.cp-header {
+  height: 40px;
+  color: black;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0d9dd;
+}
+
+.cp-header__brand {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cp-header__title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+} 
+
+.cp-header__action {
+
+}
+
+.cp-button {
+  display: inline-flex;
+  border-radius: 0.25em;
+  background-color: #D65800;
+  justify-content: center;
+  align-items: baseline;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: white;
+  padding:  .625rem 1.5rem;
+  text-decoration: none;
+}
+
+.cp-button:hover {
+  color: white;
+  background-color: #F56600;
+}
+
+.cp-content {
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 782px) {
+  .cp-content {
+    max-width: 50%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  font-weight: normal;
+}
+
+.steps {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+}
+
+.step__number {
+  font-weight: 600;
+  font-size: 1.115rem;
+  min-width: 40px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex; 
+  justify-content: center;
+  align-items:center;
+  background-color: #F6F1EB;
+}
